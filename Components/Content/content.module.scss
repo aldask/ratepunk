@@ -1,0 +1,35 @@
+@import "/app/variables.scss";
+
+.contentBox {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 15rem;
+  margin: 0 auto;
+  padding: 15rem 12.5rem;
+  width: 100%;
+
+  @media screen and (max-width: 768px) {
+    flex-direction: column;
+    width: 100%;
+    gap: 3rem;
+    padding: 10rem 2rem;
+  }
+
+  &__side1 {
+    width: 50%;
+
+    @media screen and (max-width: 990000px) {
+      width: 100%;
+    }
+  }
+
+  &__side2 {
+    width: 50%;
+
+    @media screen and (max-width: 990px) {
+      width: 100%;
+    }
+  }
+}

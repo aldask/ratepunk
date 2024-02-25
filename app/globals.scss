@@ -28,6 +28,10 @@ h1 {
   font-family: $txt-title;
   color: $txt_black;
   text-transform: uppercase;
+
+  @media screen and (max-width: 768px) {
+    font-size: 32px;
+  }
 }
 
 h2 {
@@ -48,4 +52,8 @@ p {
   font-size: 20px;
   font-family: $txt-main;
   color: $txt-black;
+
+  @media screen and (max-width: 768px) {
+    font-size: 16px;
+  }
 }
