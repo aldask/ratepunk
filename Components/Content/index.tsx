@@ -2,7 +2,7 @@ import React from "react";
 import styles from "./content.module.scss";
 import EmailBox from "../EmailBox/EmailBox";
 import Step from "../Steps";
-import { stepsList } from "./steps";
+import { stepsList } from "../Steps/steps";
 
 function Content() {
   return (

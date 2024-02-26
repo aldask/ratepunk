@@ -1,0 +1,39 @@
+@import "/app/variables.scss";
+
+.storeCard {
+  display: flex;
+  flex-direction: row;
+  border: 1px solid $txt_black;
+  border-radius: 16px;
+  align-items: center;
+  padding: 14px 24px;
+  width: 312px;
+  height: 80px;
+  gap: 16px;
+  transition: 0.2s ease-in-out;
+  color: white;
+  text-decoration: none;
+
+  &:hover {
+    background-color: $bck_main;
+    color: $txt_black;
+    cursor: pointer;
+  }
+
+  &__info {
+    color: white;
+  }
+}
+
+.storeCard__info {
+  p {
+    color: white;
+    font-size: 16px;
+  }
+
+  h3 {
+    color: white;
+    font-size: 20px;
+    text-transform: lowercase;
+  }
+}
