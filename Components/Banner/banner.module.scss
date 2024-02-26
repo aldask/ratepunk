@@ -1,0 +1,41 @@
+@import "/app/variables.scss";
+
+.banner {
+  background-color: $bck_grey;
+  padding: 0 16px;
+  gap: 32px;
+
+  &__container {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    max-width: 1120px;
+    height: 100%;
+    margin: auto;
+    gap: 16px;
+    min-height: 144px;
+
+    @media screen and (max-width: 768px) {
+      flex-direction: column;
+      justify-content: center;
+      padding: 2rem 0;
+    }
+  }
+
+  &__reviews {
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+    margin-left: 32px;
+
+    @media screen and (max-width: 768px) {
+      margin-left: 0;
+      margin-top: 24px;
+    }
+
+    p {
+      color: white;
+    }
+  }
+}
