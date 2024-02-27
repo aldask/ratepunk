@@ -40,7 +40,9 @@ const Footer = () => {
             <ul>
               {FooterLinksArray.map((link) => (
                 <li key={link.title}>
-                  <a href={link.href}>{link.title}</a>
+                  <a href={link.href} target="_blank">
+                    {link.title}
+                  </a>
                 </li>
               ))}
             </ul>
@@ -61,8 +63,8 @@ const Footer = () => {
                 }
               >
                 <Image
-                  src="/assets/email.svg"
-                  alt="ratepunk-logo"
+                  src="/assets/email-footer.svg"
+                  alt="footer-email"
                   width={16}
                   height={13}
                 />
@@ -97,7 +99,7 @@ const Footer = () => {
                       styles.footerBox__container__side3__box2__socials__list__element
                     }
                   >
-                    <a href={social.href}>
+                    <a href={social.href} target="_blank">
                       <Image
                         src={social.image}
                         alt={social.alt}

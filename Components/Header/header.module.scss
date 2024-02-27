@@ -8,8 +8,8 @@
   left: 0;
   right: 0;
   padding: 0 16px;
-  background-color: #ffffff;
-  border: 1px solid #1f343e;
+  background-color: white;
+  border: 1px solid $txt_black;
 
   &__desktop {
     display: flex;
@@ -111,25 +111,9 @@
         }
       }
     }
-
-    &__overlay {
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background-color: green;
-      display: none;
-      z-index: 1000;
-      transform: translateY(-100%);
-
-      &.active {
-        transform: translateY(0);
-      }
-    }
   }
-}
 
-.active {
-  display: block;
+  &.active {
+    height: 100vh !important;
+  }
 }
