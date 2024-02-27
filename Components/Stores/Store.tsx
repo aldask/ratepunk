@@ -16,7 +16,7 @@ const StoreCard = ({ title, href, image }: StoreCardProps) => {
         <Image
           className={styles.storeCard__image}
           src={image}
-          alt="stores"
+          alt="store"
           width={60}
           height={52}
         />
