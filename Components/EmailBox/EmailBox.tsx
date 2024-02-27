@@ -1,5 +1,6 @@
 import React from "react";
 import styles from "./emailBox.module.scss";
+import ReferalBox from "../EmailInput";
 
 function EmailBox() {
   return (
@@ -14,7 +15,7 @@ function EmailBox() {
           cash-out at 20 coins.
         </p>
       </div>
-      email input is here
+      <ReferalBox />
       <div className={styles.emailBox__footer}>
         <p>Limits on max rewards apply.</p>
       </div>

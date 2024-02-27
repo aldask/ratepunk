@@ -2,8 +2,8 @@
 import React, { useState } from "react";
 import styles from "./footer.module.scss";
 import Image from "next/image";
-import { FooterLinksArray } from "./FooterLinksArray";
-import { FooterSocialsArray } from "./FooterSocialsArray";
+import { FooterLinksArray } from "./FooterLinks/FooterLinksArray";
+import { FooterSocialsArray } from "./FooterLinks/FooterSocialsArray";
 
 const Footer = () => {
   const [currentYear, setCurrentYear] = useState(new Date().getFullYear());
@@ -28,7 +28,7 @@ const Footer = () => {
               confident in knowing you’re getting the best deal!
             </p>
           </div>
-          <div className={styles.footerBox__container__side1__copyright}>
+          <div className={styles.footerBox__container__side1__copyright__up}>
             <p>© {currentYear} Ratepunk. All Rights Reserved.</p>
           </div>
         </div>
@@ -111,6 +111,9 @@ const Footer = () => {
               </div>
             </div>
           </div>
+        </div>
+        <div className={styles.footerBox__container__side1__copyright__down}>
+          <p>© {currentYear} Ratepunk. All Rights Reserved.</p>
         </div>
       </div>
     </section>

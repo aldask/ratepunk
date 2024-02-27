@@ -1,6 +1,6 @@
-import Invite from "../../public/assets/invite.svg";
-import Collect from "../../public/assets/collect-coins.svg";
-import Voucher from "../../public/assets/voucher.svg";
+import Invite from "../../../public/assets/invite.svg";
+import Collect from "../../../public/assets/collect-coins.svg";
+import Voucher from "../../../public/assets/voucher.svg";
 
 export const stepsList = [
   {

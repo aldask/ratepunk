@@ -8,6 +8,7 @@
   &__container {
     display: flex;
     flex-direction: row;
+    padding: 0 16px;
     justify-content: space-between;
     max-width: 1120px;
     height: 100%;
@@ -18,6 +19,10 @@
     gap: 32px;
     align-items: flex-start;
 
+    @media screen and (max-width: 985px) {
+      flex-direction: column;
+    }
+
     &__side1 {
       display: flex;
       flex-direction: column;
@@ -27,12 +32,17 @@
 
       &__description {
         width: 544px;
+
+        @media screen and (max-width: 985px) {
+          width: 311px;
+        }
+
         p {
           font-size: 16px;
         }
       }
 
-      &__copyright {
+      &__copyright__up {
         p {
           color: $txt_grey;
           font-size: 16px;
@@ -49,8 +59,13 @@
 
       &__title {
         h3 {
-          color: black;
+          color: $txt_black;
           letter-spacing: 1.6px;
+          font-weight: bold;
+
+          @media screen and (max-width: 985px) {
+            font-size: 16px;
+          }
         }
       }
 
@@ -87,14 +102,23 @@
       gap: 70px;
       flex: 1;
 
+      @media screen and (max-width: 985px) {
+        gap: 32px;
+      }
+
       &__box1 {
         display: flex;
         flex-direction: column;
         gap: 24px;
 
         &__title {
-          color: black;
+          color: $txt_black;
           letter-spacing: 1.6px;
+          font-weight: bold;
+
+          @media screen and (max-width: 985px) {
+            font-size: 16px;
+          }
         }
 
         &__email {
@@ -122,8 +146,13 @@
           gap: 24px;
 
           &__title {
-            color: black;
+            color: $txt_black;
             letter-spacing: 1.6px;
+            font-weight: bold;
+
+            @media screen and (max-width: 985px) {
+              font-size: 16px;
+            }
           }
 
           &__list {
@@ -150,5 +179,26 @@
         }
       }
     }
+  }
+}
+
+.footerBox__container__side1__copyright__up {
+  display: flex;
+
+  @media screen and (max-width: 985px) {
+    display: none;
+  }
+}
+
+.footerBox__container__side1__copyright__down {
+  display: none;
+
+  @media screen and (max-width: 985px) {
+    display: flex;
+  }
+
+  p {
+    color: $txt_grey;
+    font-size: 16px;
   }
 }
