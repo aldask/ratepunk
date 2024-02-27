@@ -85,10 +85,10 @@ function Header() {
                 </a>
               </li>
               <li>
-                <a href="google.lt">Price Comparison</a>
+                <a href="#">Price Comparison</a>
               </li>
               <li>
-                <a href="google.lt">Blog</a>
+                <a href="#">Blog</a>
               </li>
             </ul>
           )}
