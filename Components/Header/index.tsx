@@ -19,7 +19,7 @@ function Header() {
   }, [mobileNav]);
 
   return (
-    <header className={styles.header}>
+    <header className={`${styles.header} ${mobileNav ? styles.active : ""}`}>
       {/* Desktop View */}
       <div className={styles.header__desktop}>
         <div className={styles.header__desktop__image}>
@@ -33,7 +33,10 @@ function Header() {
         <div className={styles.header__desktop__buttonsList}>
           <ul>
             <li>
-              <a href="https://chrome.google.com/webstore/detail/ratepunk-same-hotel-way-c/gdaioanblcnghddimngklkhgcbomfdck?utm_source=ratepunk">
+              <a
+                href="https://chrome.google.com/webstore/detail/ratepunk-same-hotel-way-c/gdaioanblcnghddimngklkhgcbomfdck?utm_source=ratepunk"
+                target="_blank"
+              >
                 Chrome Extension
               </a>
             </li>
@@ -80,7 +83,10 @@ function Header() {
           {mobileNav && (
             <ul>
               <li>
-                <a href="https://chrome.google.com/webstore/detail/ratepunk-same-hotel-way-c/gdaioanblcnghddimngklkhgcbomfdck?utm_source=ratepunk">
+                <a
+                  href="https://chrome.google.com/webstore/detail/ratepunk-same-hotel-way-c/gdaioanblcnghddimngklkhgcbomfdck?utm_source=ratepunk"
+                  target="_blank"
+                >
                   Chrome Extension
                 </a>
               </li>
@@ -96,7 +102,10 @@ function Header() {
       </div>
 
       {mobileNav && (
-        <div className={styles.header__overlay} onClick={handleMobileNav}></div>
+        <div
+          className={`${styles.header__overlay} ${styles.active}`}
+          onClick={handleMobileNav}
+        ></div>
       )}
     </header>
   );
