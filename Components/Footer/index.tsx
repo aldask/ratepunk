@@ -2,8 +2,8 @@
 import React, { useState } from "react";
 import styles from "./footer.module.scss";
 import Image from "next/image";
-import { FooterLinksArray } from "./FooterLinks/FooterLinksArray";
-import { FooterSocialsArray } from "./FooterLinks/FooterSocialsArray";
+import { FooterLinksArray } from "./FooterLinks/footerLinksArray";
+import { FooterSocialsArray } from "./FooterLinks/footerSocialsArray";
 
 const Footer = () => {
   const [currentYear, setCurrentYear] = useState(new Date().getFullYear());
