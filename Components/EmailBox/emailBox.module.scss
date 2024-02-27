@@ -1,0 +1,31 @@
+@import "/app/variables.scss";
+
+.emailBox {
+  display: flex;
+  flex-direction: column;
+  background-color: $bck_email;
+  border-radius: 16px;
+  padding: 5rem;
+  border: 1px solid $txt_black;
+
+  @media screen and (max-width: 768px) {
+    padding: 1rem;
+  }
+
+  &__title {
+    margin-bottom: 32px;
+  }
+
+  &__txt {
+    margin-bottom: 32px;
+  }
+
+  &__footer {
+    margin-top: 80px;
+
+    p {
+      color: $txt_grey;
+      font-size: 16px;
+    }
+  }
+}

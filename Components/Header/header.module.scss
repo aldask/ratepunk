@@ -1,0 +1,135 @@
+@import "/app/variables.scss";
+
+.header {
+  position: fixed;
+  width: 100vw;
+  height: 80px;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 0 16px;
+  background-color: #ffffff;
+  border: 1px solid #1f343e;
+
+  &__desktop {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1120px;
+    height: 100%;
+    margin: auto;
+
+    &__image {
+      img {
+        display: block;
+        max-width: 100%;
+        height: auto;
+      }
+    }
+
+    &__buttonsList {
+      ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        gap: 55px;
+        list-style: none;
+
+        li {
+          a {
+            text-decoration: none;
+            color: #333;
+            font-weight: 500;
+            transition: color 0.3s ease;
+
+            &:hover {
+              color: $txt_blue-hover;
+            }
+          }
+        }
+      }
+    }
+
+    @media screen and (max-width: 768px) {
+      display: none;
+    }
+  }
+
+  &__mobile {
+    margin: 20px;
+    display: none;
+
+    @media screen and (max-width: 768px) {
+      display: block;
+      z-index: 9999;
+      transition: transform 0.3s ease-in-out;
+    }
+
+    &__top {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      &__image {
+        img {
+          display: block;
+          max-width: 100%;
+          height: auto;
+        }
+      }
+
+      &__exit {
+        cursor: pointer;
+        img {
+          display: block;
+          max-width: 100%;
+          height: auto;
+        }
+      }
+    }
+
+    &__buttonsList {
+      ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+
+        li {
+          margin-top: 25px;
+          margin-bottom: 15px;
+
+          a {
+            text-decoration: none;
+            color: #333;
+            font-weight: 500;
+            transition: color 0.3s ease;
+
+            &:hover {
+              color: $txt_blue-hover;
+            }
+          }
+        }
+      }
+    }
+
+    &__overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: green;
+      display: none;
+      z-index: 1000;
+      transform: translateY(-100%);
+
+      &.active {
+        transform: translateY(0);
+      }
+    }
+  }
+}
+
+.active {
+  display: block;
+}

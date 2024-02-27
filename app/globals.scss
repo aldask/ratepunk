@@ -1,0 +1,60 @@
+@import "/app/variables.scss";
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  font-family: $txt-main;
+  background-color: $bck_main;
+  overflow: hidden;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 0 12.5rem;
+
+  @media screen and (max-width: 768px) {
+    padding: 0 1.5rem;
+  }
+}
+
+h1 {
+  font-size: 48px;
+  font-family: $txt-title;
+  color: $txt_black;
+  text-transform: uppercase;
+
+  @media screen and (max-width: 768px) {
+    font-size: 32px;
+  }
+}
+
+h2 {
+  font-size: 32px;
+  font-family: $txt-title;
+  color: $txt_black;
+  text-transform: uppercase;
+}
+
+h3 {
+  font-size: 20px;
+  font-family: $txt-main;
+  color: $txt_blue-hover;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+p {
+  font-size: 20px;
+  font-family: $txt-main;
+  color: $txt-black;
+
+  @media screen and (max-width: 768px) {
+    font-size: 16px;
+  }
+}
